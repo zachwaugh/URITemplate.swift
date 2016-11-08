@@ -1,9 +1,9 @@
 [submodule "Tests/URITemplateTests/Cases"]
 	path = Tests/URITemplateTests/Cases
 	url = https://github.com/uri-templates/uritemplate-test
-[submodule "Packages/Spectre"]
-	path = Packages/Spectre
+[submodule "Packages/Spectre-0.7.1"]
+	path = Packages/Spectre-0.7.1
 	url = https://github.com/kylef/Spectre
-[submodule "Packages/PathKit"]
-	path = Packages/PathKit
+[submodule "Packages/PathKit-0.7.0"]
+	path = Packages/PathKit-0.7.0
 	url = https://github.com/kylef/PathKit
