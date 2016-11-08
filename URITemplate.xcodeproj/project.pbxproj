@@ -1,793 +1,644 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      OBJ_1 = {
-         isa = "PBXProject";
-         attributes = {
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = OBJ_2;
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "English";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en",
-         );
-         mainGroup = OBJ_5;
-         productRefGroup = OBJ_28;
-         projectDirPath = ".";
-         targets = (
-            OBJ_33,
-            OBJ_47,
-            OBJ_56,
-            OBJ_67,
-         );
-      };
-      OBJ_10 = {
-         isa = "PBXFileReference";
-         path = "Context.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_11 = {
-         isa = "PBXFileReference";
-         path = "Expectation.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_12 = {
-         isa = "PBXFileReference";
-         path = "Failure.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_13 = {
-         isa = "PBXFileReference";
-         path = "Global.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_14 = {
-         isa = "PBXFileReference";
-         path = "GlobalContext.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_15 = {
-         isa = "PBXFileReference";
-         path = "Reporter.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_16 = {
-         isa = "PBXFileReference";
-         path = "Reporters.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_17 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_18,
-         );
-         name = "PathKit";
-         path = "Packages/PathKit-0.7.0/Sources";
-         sourceTree = "SOURCE_ROOT";
-      };
-      OBJ_18 = {
-         isa = "PBXFileReference";
-         path = "PathKit.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_19 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_20,
-         );
-         name = "URITemplate";
-         path = "Sources";
-         sourceTree = "SOURCE_ROOT";
-      };
-      OBJ_2 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_3,
-            OBJ_4,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_20 = {
-         isa = "PBXFileReference";
-         path = "URITemplate.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_21 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_22,
-         );
-         path = "Tests";
-         sourceTree = "<group>";
-      };
-      OBJ_22 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_23,
-            OBJ_24,
-            OBJ_25,
-            OBJ_26,
-            OBJ_27,
-         );
-         name = "URITemplateTests";
-         path = "Tests/URITemplateTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      OBJ_23 = {
-         isa = "PBXFileReference";
-         path = "URITemplateCases.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_24 = {
-         isa = "PBXFileReference";
-         path = "URITemplateExpansionTests.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_25 = {
-         isa = "PBXFileReference";
-         path = "URITemplateExtractTests.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_26 = {
-         isa = "PBXFileReference";
-         path = "URITemplateVariablesTests.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_27 = {
-         isa = "PBXFileReference";
-         path = "XCTest.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_28 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_29,
-            OBJ_30,
-            OBJ_31,
-            OBJ_32,
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_29 = {
-         isa = "PBXFileReference";
-         path = "Spectre.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_3 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator",
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      OBJ_30 = {
-         isa = "PBXFileReference";
-         path = "PathKit.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_31 = {
-         isa = "PBXFileReference";
-         path = "URITemplate.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_32 = {
-         isa = "PBXFileReference";
-         path = "URITemplateTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_33 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_34;
-         buildPhases = (
-            OBJ_37,
-            OBJ_46,
-         );
-         dependencies = (
-         );
-         name = "Spectre";
-         productName = "Spectre";
-         productReference = OBJ_29;
-         productType = "com.apple.product-type.framework";
-      };
-      OBJ_34 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_35,
-            OBJ_36,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_35 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/Spectre_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Spectre";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "Spectre";
-         };
-         name = "Debug";
-      };
-      OBJ_36 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/Spectre_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Spectre";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "Spectre";
-         };
-         name = "Release";
-      };
-      OBJ_37 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_38,
-            OBJ_39,
-            OBJ_40,
-            OBJ_41,
-            OBJ_42,
-            OBJ_43,
-            OBJ_44,
-            OBJ_45,
-         );
-      };
-      OBJ_38 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_9;
-      };
-      OBJ_39 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_10;
-      };
-      OBJ_4 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator",
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-O";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      OBJ_40 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_11;
-      };
-      OBJ_41 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_12;
-      };
-      OBJ_42 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_13;
-      };
-      OBJ_43 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_14;
-      };
-      OBJ_44 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_15;
-      };
-      OBJ_45 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_16;
-      };
-      OBJ_46 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      OBJ_47 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_48;
-         buildPhases = (
-            OBJ_51,
-            OBJ_53,
-         );
-         dependencies = (
-            OBJ_55,
-         );
-         name = "PathKit";
-         productName = "PathKit";
-         productReference = OBJ_30;
-         productType = "com.apple.product-type.framework";
-      };
-      OBJ_48 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_49,
-            OBJ_50,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_49 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/PathKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "PathKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "PathKit";
-         };
-         name = "Debug";
-      };
-      OBJ_5 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_6,
-            OBJ_7,
-            OBJ_21,
-            OBJ_28,
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      OBJ_50 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/PathKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "PathKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "PathKit";
-         };
-         name = "Release";
-      };
-      OBJ_51 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_52,
-         );
-      };
-      OBJ_52 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_18;
-      };
-      OBJ_53 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            OBJ_54,
-         );
-      };
-      OBJ_54 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_29;
-      };
-      OBJ_55 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_33;
-      };
-      OBJ_56 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_57;
-         buildPhases = (
-            OBJ_60,
-            OBJ_62,
-         );
-         dependencies = (
-            OBJ_65,
-            OBJ_66,
-         );
-         name = "URITemplate";
-         productName = "URITemplate";
-         productReference = OBJ_31;
-         productType = "com.apple.product-type.framework";
-      };
-      OBJ_57 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_58,
-            OBJ_59,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_58 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/URITemplate_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "URITemplate";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "URITemplate";
-         };
-         name = "Debug";
-      };
-      OBJ_59 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/URITemplate_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "URITemplate";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "URITemplate";
-         };
-         name = "Release";
-      };
-      OBJ_6 = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_60 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_61,
-         );
-      };
-      OBJ_61 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_20;
-      };
-      OBJ_62 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            OBJ_63,
-            OBJ_64,
-         );
-      };
-      OBJ_63 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_29;
-      };
-      OBJ_64 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_30;
-      };
-      OBJ_65 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_33;
-      };
-      OBJ_66 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_47;
-      };
-      OBJ_67 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_68;
-         buildPhases = (
-            OBJ_71,
-            OBJ_77,
-         );
-         dependencies = (
-            OBJ_81,
-            OBJ_82,
-            OBJ_83,
-         );
-         name = "URITemplateTests";
-         productName = "URITemplateTests";
-         productReference = OBJ_32;
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      OBJ_68 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_69,
-            OBJ_70,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_69 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/URITemplateTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "@loader_path/../Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "URITemplateTests";
-         };
-         name = "Debug";
-      };
-      OBJ_7 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_8,
-            OBJ_17,
-            OBJ_19,
-         );
-         path = "Sources";
-         sourceTree = "<group>";
-      };
-      OBJ_70 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-            );
-            INFOPLIST_FILE = "URITemplate.xcodeproj/URITemplateTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "@loader_path/../Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "URITemplateTests";
-         };
-         name = "Release";
-      };
-      OBJ_71 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_72,
-            OBJ_73,
-            OBJ_74,
-            OBJ_75,
-            OBJ_76,
-         );
-      };
-      OBJ_72 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_23;
-      };
-      OBJ_73 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_24;
-      };
-      OBJ_74 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_25;
-      };
-      OBJ_75 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_26;
-      };
-      OBJ_76 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_27;
-      };
-      OBJ_77 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            OBJ_78,
-            OBJ_79,
-            OBJ_80,
-         );
-      };
-      OBJ_78 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_29;
-      };
-      OBJ_79 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_30;
-      };
-      OBJ_8 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_9,
-            OBJ_10,
-            OBJ_11,
-            OBJ_12,
-            OBJ_13,
-            OBJ_14,
-            OBJ_15,
-            OBJ_16,
-         );
-         name = "Spectre";
-         path = "Packages/Spectre-0.7.1/Sources";
-         sourceTree = "SOURCE_ROOT";
-      };
-      OBJ_80 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_31;
-      };
-      OBJ_81 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_33;
-      };
-      OBJ_82 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_47;
-      };
-      OBJ_83 = {
-         isa = "PBXTargetDependency";
-         target = OBJ_56;
-      };
-      OBJ_9 = {
-         isa = "PBXFileReference";
-         path = "Case.swift";
-         sourceTree = "<group>";
-      };
-   };
-   rootObject = OBJ_1;
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_38 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Case.swift */; };
+		OBJ_39 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Context.swift */; };
+		OBJ_40 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Expectation.swift */; };
+		OBJ_41 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Failure.swift */; };
+		OBJ_42 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Global.swift */; };
+		OBJ_43 /* GlobalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* GlobalContext.swift */; };
+		OBJ_44 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Reporter.swift */; };
+		OBJ_45 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Reporters.swift */; };
+		OBJ_52 /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* PathKit.swift */; };
+		OBJ_54 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Spectre.framework */; };
+		OBJ_61 /* URITemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* URITemplate.swift */; };
+		OBJ_63 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Spectre.framework */; };
+		OBJ_64 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* PathKit.framework */; };
+		OBJ_72 /* URITemplateCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* URITemplateCases.swift */; };
+		OBJ_73 /* URITemplateExpansionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* URITemplateExpansionTests.swift */; };
+		OBJ_74 /* URITemplateExtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* URITemplateExtractTests.swift */; };
+		OBJ_75 /* URITemplateVariablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* URITemplateVariablesTests.swift */; };
+		OBJ_76 /* XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* XCTest.swift */; };
+		OBJ_78 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Spectre.framework */; };
+		OBJ_79 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* PathKit.framework */; };
+		OBJ_80 /* URITemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* URITemplate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		923975DC1DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_33;
+			remoteInfo = Spectre;
+		};
+		923975DD1DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_33;
+			remoteInfo = Spectre;
+		};
+		923975DE1DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_47;
+			remoteInfo = PathKit;
+		};
+		923975DF1DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_33;
+			remoteInfo = Spectre;
+		};
+		923975E01DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_47;
+			remoteInfo = PathKit;
+		};
+		923975E11DD2780B007B1F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_56;
+			remoteInfo = URITemplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		OBJ_14 /* GlobalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContext.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
+		OBJ_18 /* PathKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
+		OBJ_20 /* URITemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URITemplate.swift; sourceTree = "<group>"; };
+		OBJ_23 /* URITemplateCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URITemplateCases.swift; sourceTree = "<group>"; };
+		OBJ_24 /* URITemplateExpansionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URITemplateExpansionTests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* URITemplateExtractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URITemplateExtractTests.swift; sourceTree = "<group>"; };
+		OBJ_26 /* URITemplateVariablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URITemplateVariablesTests.swift; sourceTree = "<group>"; };
+		OBJ_27 /* XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTest.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Spectre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spectre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_30 /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_31 /* URITemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = URITemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_32 /* URITemplateTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = URITemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_54 /* Spectre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_63 /* Spectre.framework in Frameworks */,
+				OBJ_64 /* PathKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_78 /* Spectre.framework in Frameworks */,
+				OBJ_79 /* PathKit.framework in Frameworks */,
+				OBJ_80 /* URITemplate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_17 /* PathKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* PathKit.swift */,
+			);
+			name = PathKit;
+			path = "Packages/PathKit-0.7.0/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* URITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* URITemplate.swift */,
+			);
+			name = URITemplate;
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_21 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* URITemplateTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* URITemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* URITemplateCases.swift */,
+				OBJ_24 /* URITemplateExpansionTests.swift */,
+				OBJ_25 /* URITemplateExtractTests.swift */,
+				OBJ_26 /* URITemplateVariablesTests.swift */,
+				OBJ_27 /* XCTest.swift */,
+			);
+			name = URITemplateTests;
+			path = Tests/URITemplateTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* Spectre.framework */,
+				OBJ_30 /* PathKit.framework */,
+				OBJ_31 /* URITemplate.framework */,
+				OBJ_32 /* URITemplateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_21 /* Tests */,
+				OBJ_28 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Spectre */,
+				OBJ_17 /* PathKit */,
+				OBJ_19 /* URITemplate */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* Spectre */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Case.swift */,
+				OBJ_10 /* Context.swift */,
+				OBJ_11 /* Expectation.swift */,
+				OBJ_12 /* Failure.swift */,
+				OBJ_13 /* Global.swift */,
+				OBJ_14 /* GlobalContext.swift */,
+				OBJ_15 /* Reporter.swift */,
+				OBJ_16 /* Reporters.swift */,
+			);
+			name = Spectre;
+			path = "Packages/Spectre-0.7.1/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_33 /* Spectre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_34 /* Build configuration list for PBXNativeTarget "Spectre" */;
+			buildPhases = (
+				OBJ_37 /* Sources */,
+				OBJ_46 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectre;
+			productName = Spectre;
+			productReference = OBJ_29 /* Spectre.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_47 /* PathKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "PathKit" */;
+			buildPhases = (
+				OBJ_51 /* Sources */,
+				OBJ_53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_55 /* PBXTargetDependency */,
+			);
+			name = PathKit;
+			productName = PathKit;
+			productReference = OBJ_30 /* PathKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_56 /* URITemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "URITemplate" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+				OBJ_62 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_65 /* PBXTargetDependency */,
+				OBJ_66 /* PBXTargetDependency */,
+			);
+			name = URITemplate;
+			productName = URITemplate;
+			productReference = OBJ_31 /* URITemplate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_67 /* URITemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "URITemplateTests" */;
+			buildPhases = (
+				OBJ_71 /* Sources */,
+				OBJ_77 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_81 /* PBXTargetDependency */,
+				OBJ_82 /* PBXTargetDependency */,
+				OBJ_83 /* PBXTargetDependency */,
+			);
+			name = URITemplateTests;
+			productName = URITemplateTests;
+			productReference = OBJ_32 /* URITemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "URITemplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_33 /* Spectre */,
+				OBJ_47 /* PathKit */,
+				OBJ_56 /* URITemplate */,
+				OBJ_67 /* URITemplateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_38 /* Case.swift in Sources */,
+				OBJ_39 /* Context.swift in Sources */,
+				OBJ_40 /* Expectation.swift in Sources */,
+				OBJ_41 /* Failure.swift in Sources */,
+				OBJ_42 /* Global.swift in Sources */,
+				OBJ_43 /* GlobalContext.swift in Sources */,
+				OBJ_44 /* Reporter.swift in Sources */,
+				OBJ_45 /* Reporters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_52 /* PathKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* URITemplate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* URITemplateCases.swift in Sources */,
+				OBJ_73 /* URITemplateExpansionTests.swift in Sources */,
+				OBJ_74 /* URITemplateExtractTests.swift in Sources */,
+				OBJ_75 /* URITemplateVariablesTests.swift in Sources */,
+				OBJ_76 /* XCTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_33 /* Spectre */;
+			targetProxy = 923975DC1DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+		OBJ_65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_33 /* Spectre */;
+			targetProxy = 923975DD1DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+		OBJ_66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_47 /* PathKit */;
+			targetProxy = 923975DE1DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+		OBJ_81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_33 /* Spectre */;
+			targetProxy = 923975DF1DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+		OBJ_82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_47 /* PathKit */;
+			targetProxy = 923975E01DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+		OBJ_83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_56 /* URITemplate */;
+			targetProxy = 923975E11DD2780B007B1F05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/Spectre_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Spectre;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = Spectre;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Debug;
+		};
+		OBJ_50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/PathKit_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PathKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PathKit;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/URITemplate_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = URITemplate;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = URITemplate;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/URITemplate_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = URITemplate;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = URITemplate;
+			};
+			name = Release;
+		};
+		OBJ_69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/URITemplateTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = URITemplateTests;
+			};
+			name = Debug;
+		};
+		OBJ_70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = URITemplate.xcodeproj/URITemplateTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = URITemplateTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "URITemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_34 /* Build configuration list for PBXNativeTarget "Spectre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_35 /* Debug */,
+				OBJ_36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_48 /* Build configuration list for PBXNativeTarget "PathKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_49 /* Debug */,
+				OBJ_50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_57 /* Build configuration list for PBXNativeTarget "URITemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_68 /* Build configuration list for PBXNativeTarget "URITemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }
